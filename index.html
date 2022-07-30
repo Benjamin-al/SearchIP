@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--traemos los estilos del freamwork que utilisaremos en este caso picocss-->
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Busca IP!</title>
+  </head>
+  <body>
+    <main class="container">
+      <form class="form">
+            <label>
+                IP de Usuario
+                <input required type="text" class="input" placeholder="Introduce aqui la IP">
+                <small>Por ejemplo: 54.85.132.205</small>
+            </label>
+            <button type="submit" class="submit">
+                Buscar informacion de esta IP
+            </button>
+      </form>
+      <div>
+        <!--formatiamoas el resultado de la apli ya que es json-->
+        <pre class="results">
+
+        </pre>
+      </div>
+    </main>
+    <script src="buscarIp.js"></script>
+  </body>
+</html>
